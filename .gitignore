@@ -1,0 +1,17 @@
+# Build artifacts
+comphys.exe
+*.exe
+*.o
+*.obj
+*.out
+*.mod
+*.log
+
+# Output CSVs
+out/*
+!out/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db
+

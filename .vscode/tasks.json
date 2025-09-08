@@ -1,0 +1,21 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build (gfortran -std=legacy)",
+      "type": "shell",
+      "command": "gfortran",
+      "args": [
+        "-std=legacy",
+        "-ffixed-line-length-132",
+        "${workspaceFolder}/src/comphys.f",
+        "-o",
+        "${workspaceFolder}/comphys.exe"
+      ],
+      "group": "build",
+      "problemMatcher": [],
+      "options": { "cwd": "${workspaceFolder}" }
+    }
+  ]
+}
+

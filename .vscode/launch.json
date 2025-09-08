@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run comphys.exe",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/comphys.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "MIMode": "gdb",
+      "externalConsole": true,
+      "preLaunchTask": "build (gfortran -std=legacy)"
+    }
+  ]
+}
+
