@@ -1,6 +1,6 @@
-# ComPhysProject — Nuclear Optical Model (Fortran 77, มือใหม่)
+# ComPhysProject —(Fortran 77, มือใหม่)
 
-โค้ดตัวอย่างสไตล์มือใหม่ (คอมเมนต์ไทย) สำหรับคำนวณศักย์เชิงซ้อนแบบ Optical Model ของโปรตอนกระทบแกน 58Ni และบันทึกผลเป็น CSV เพื่อพล็อตด้วย Excel ได้ทันที
+โค้ดตัวอย่างสำหรับคำนวณศักย์เชิงซ้อนแบบ Optical Model ของโปรตอนกระทบแกน 58Ni และบันทึกผลเป็น CSV เพื่อพล็อตด้วย Excel ได้ทันที (การบ้าน4)
 
 - ภาษา: Fortran 77 (fixed-form)
 - คอมไพล์: `gfortran -std=legacy -ffixed-line-length-132 src/comphys.f -o comphys.exe`
@@ -26,14 +26,11 @@ ComPhysProject/
 
 ## วิธิใช้งาน
 
-- VS Code: กด Run “Run comphys.exe” (จะ Build ก่อนอัตโนมัติ)
-- หรือ Windows CMD/PowerShell:
-  - `scripts\build.bat`
-  - `scripts\run.bat`
+เอาไปลองรันดูห้ามลอกโดยเด็ดขาดเดี่ยวคะแนนหาย
 
-ไฟล์ `out/opot.csv` จะถูกสร้างขึ้น พร้อมหัวคอลัมน์ `r,Ureal,Uimag,Uabs` นำเข้า Excel แล้วเลือกตัวคั่นเป็น Comma เพื่อพล็อตกราฟได้เลย
+ไฟล์ `out/opot.csv` จะถูกสร้างขึ้น พร้อมหัวคอลัมน์ `r,Ureal,Uimag,Uabs` นำเข้า Excel แล้วเลือกตัวคั่นเป็น Comma เพื่อพล็อตกราฟได้เลย (ตัวอย่างการบ้าน4)
 
-## ฟิสิกส์ที่ใช้ (ย่อ)
+## ฟิสิกส์
 
 - Nuclear potential: Woods–Saxon เชิงซ้อน
   - Re[U] = −V f(r,R,a) + UC(r)
